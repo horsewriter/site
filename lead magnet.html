@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Descarga tu Ebook Gratis | HorseWriter</title>
+    <meta name="description" content="Descarga gratis nuestro ebook exclusivo sobre ghostwriting profesional al suscribirte." />
+    <meta name="author" content="HorseWriter" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        serif: ['Noto Serif', 'serif'],
+                    },
+                    colors: {
+                        navy: '#1e3a8a',
+                        sand: '#f5f5dc',
+                        charcoal: '#374151',
+                        slate: '#6b7280',
+                    },
+                },
+            },
+            darkMode: 'class',
+        };
+    </script>
+</head>
+<body class="font-serif text-gray-900 bg-white dark:bg-gray-900 dark:text-white transition-colors duration-300 min-h-screen flex flex-col">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-inter font-bold text-2xl text-navy dark:text-white">
+                HorseWriter
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="services.html" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Servicios</a>
+                <a href="packages.html" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Paquetes</a>
+                <a href="contact.html" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center px-6 pt-32 pb-24">
+        <div class="max-w-xl text-center">
+            <h1 class="font-inter font-bold text-5xl mb-6 text-navy dark:text-blue-400">
+                ¡Gracias por tu interés!
+            </h1>
+            <p class="mb-8 text-lg text-slate dark:text-gray-300 leading-relaxed">
+                Ya casi tienes tu ebook exclusivo sobre ghostwriting profesional. Solo confirma tu suscripción y recibe el enlace de descarga directamente en tu correo.
+            </p>
+
+            <form action="https://formsubmit.co/a.mejiabjs@protonmail.com" method="POST" class="flex flex-col gap-4">
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Tu correo electrónico"
+                    required
+                    class="px-4 py-3 rounded-md text-gray-900 focus:outline-none"
+                />
+                <button
+                    type="submit"
+                    class="bg-navy hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-md transition-colors duration-200"
+                >
+                    Enviar ebook
+                </button>
+
+                <!-- Formsubmit hidden inputs -->
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_next" value="https://horsewriter.com/gracias.html" />
+            </form>
+        </div>
+    </main>
+
+    <footer class="py-12 px-6 bg-gray-900 text-white text-center">
+        <div class="max-w-6xl mx-auto">
+            <div class="font-inter font-bold text-2xl mb-4">HorseWriter</div>
+            <p class="text-gray-400 mb-8">Servicios premium de ghostwriting discretos y profesionales.</p>
+            <div class="w-24 h-px bg-gray-700 mx-auto"></div>
+        </div>
+    </footer>
+</body>
+</html>
