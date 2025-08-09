@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>¡Gracias por suscribirte! | HorseWriter</title>
+  <meta name="description" content="Gracias por suscribirte al Curso Express de Copywriting de HorseWriter. Revisa tu correo para acceder al contenido y empezar a vender más." />
+  <meta name="author" content="HorseWriter" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+            serif: ['Noto Serif', 'serif'],
+          },
+          colors: {
+            navy: '#1e3a8a',
+            sand: '#f5f5dc',
+            charcoal: '#374151',
+            slate: '#6b7280',
+          },
+        },
+      },
+      darkMode: 'class',
+    };
+  </script>
+</head>
+<body class="font-serif text-gray-900 bg-white dark:bg-gray-900 dark:text-white transition-colors duration-300 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="font-inter font-bold text-2xl text-navy dark:text-white">
+        HorseWriter
+      </a>
+
+      <nav class="hidden md:flex space-x-8">
+        <a href="services.html" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Servicios</a>
+        <a href="packages.html" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Paquetes</a>
+        <a href="contact.html" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Contacto</a>
+      </nav>
+
+      <div class="flex items-center space-x-4">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" aria-label="Cambiar tema" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">
+          <svg id="sun-icon" class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20" >
+            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+          </svg>
+          <svg id="moon-icon" class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20" >
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200" aria-label="Abrir menú móvil">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200 dark:border-gray-700">
+      <div class="flex flex-col space-y-4 pt-4 px-6">
+        <a href="services.html" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Servicios</a>
+        <a href="packages.html" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Paquetes</a>
+        <a href="contact.html" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-grow flex items-center justify-center px-6 pt-32 pb-24">
+    <div class="max-w-xl text-center">
+      <h1 class="font-inter font-extrabold text-5xl mb-6 leading-tight text-navy dark:text-blue-400 drop-shadow-lg">
+        🎉 ¡Gracias por suscribirte!
+      </h1>
+      <p class="mb-8 text-lg text-slate dark:text-gray-300 leading-relaxed tracking-wide drop-shadow-sm">
+        Has dado el primer paso para mejorar tus ventas con nuestro <strong>Curso Express de Copywriting</strong>.
+      </p>
+      <p class="mb-10 text-lg text-slate dark:text-gray-300 leading-relaxed tracking-wide drop-shadow-sm">
+        Revisa tu correo electrónico para acceder al contenido y comenzar a escribir textos que <strong>conectan, persuaden y venden</strong>.
+      </p>
+
+      <a href="index.html" class="inline-block bg-navy hover:bg-blue-800 text-white font-extrabold text-xl py-4 px-8 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+        Volver a la página principal
+      </a>
+    </div>
+  </main>
+
+  <footer class="py-12 px-6 bg-gray-900 text-white text-center">
+    <div class="max-w-6xl mx-auto">
+      <div class="font-inter font-bold text-2xl mb-4">HorseWriter</div>
+      <p class="text-gray-400 mb-8">Servicios premium de ghostwriting discretos y profesionales.</p>
+      <div class="w-24 h-px bg-gray-700 mx-auto"></div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle script
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+    const htmlEl = document.documentElement;
+
+    // Init theme on load
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      htmlEl.classList.add('dark');
+      sunIcon.classList.remove('hidden');
+      moonIcon.classList.add('hidden');
+    } else {
+      htmlEl.classList.remove('dark');
+      sunIcon.classList.add('hidden');
+      moonIcon.classList.remove('hidden');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      if (htmlEl.classList.contains('dark')) {
+        htmlEl.classList.remove('dark');
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
+        localStorage.setItem('theme', 'light');
+      } else {
+        htmlEl.classList.add('dark');
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
